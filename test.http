@@ -1,0 +1,31 @@
+
+@host = http://127.0.0.1:3005
+
+GET {{host}}/todos
+
+###
+
+POST {{host}}/todos
+Content-Type: application/json
+
+{
+    "title": "learn JavaScript 3"
+}
+
+###
+
+DELETE {{host}}/todos
+
+###
+
+DELETE {{host}}/todos/3cb97bfb-2af5-40aa-975e-a6b44bafe9ec
+
+###
+
+PATCH {{host}}/todos/dccd137d-5cc5-4a83-bbae-c0dc93162080
+Content-Type: application/json
+
+{
+    "title": "learn JavaScript 1"
+}
+
